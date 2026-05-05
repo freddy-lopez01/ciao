@@ -46,7 +46,7 @@ export default function App() {
 }
 
 export function HydrateFallback() {
-  return null;
+  return <div />;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
