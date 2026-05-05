@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, loadEnv } from "vite";
 
 export default defineConfig(({ mode }) => ({
+  base: "/ciao/",
   plugins: [
 	tailwindcss(),
     reactRouter(),
