@@ -45,6 +45,10 @@ export default function App() {
   return <Outlet />;
 }
 
+export function HydrateFallback() {
+  return null;
+}
+
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
@@ -73,3 +77,4 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     </main>
   );
 }
+
