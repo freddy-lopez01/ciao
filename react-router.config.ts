@@ -1,11 +1,5 @@
-import { reactRouter } from "@react-router/dev/vite";
-import { defineConfig } from "vite";
+import type { Config } from "@react-router/dev/config";
 
-export default defineConfig({
-  base: "/ciao/",   // ← must match your GitHub repo name exactly
-  plugins: [
-    reactRouter({
-      ssr: false,             // ← disables SSR, outputs pure static files
-    }),
-  ],
-});
+export default {
+  ssr: false,
+} satisfies Confi
