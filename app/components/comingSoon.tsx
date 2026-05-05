@@ -27,3 +27,6 @@ export function ComingSoon({ page }: ComingSoonProps) {
     </main>
   );
 }
+
+
+// comment
