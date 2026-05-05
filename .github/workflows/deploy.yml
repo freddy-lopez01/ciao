@@ -37,9 +37,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Show build output
-        run: ls -la && find . -not -path "*/node_modules/*" -name "*.html" 2>/dev/null; echo "---dirs---"; ls -la build/ 2>/dev/null || ls -la dist/ 2>/dev/null || echo "no build or dist folder found"
-
       - name: Find index.html
         run: find . -name "index.html" | grep -v node_modules
 
